@@ -8,7 +8,7 @@ exports.createOrders = async (req, res, next) => {
   ).toFixed(2);
   const status = "pending";
 
-  // console.log(amount, "AMOUNT");To display the amount to the console log
+  // console.log(amount, "AMOUNT");To display the total amount to the console log
 
   const order = await orderModel.create({ cartItems, amount, status });
 

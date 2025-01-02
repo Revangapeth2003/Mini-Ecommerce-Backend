@@ -17,7 +17,7 @@ app.use("/api/v1/", products);
 app.use("/api/v1/", orders);
 
 app.listen(process.env.PORT, () => {
-  //process.env is the momery
+  //process.env is an memory
   console.log(
     `Server listening to port ${process.env.PORT} in ${process.env.NODE_ENV}`
   );
